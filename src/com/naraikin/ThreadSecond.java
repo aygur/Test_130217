@@ -18,9 +18,9 @@ public class ThreadSecond extends Thread {
         while (!counter.isFinish){
             try {
                 Random random = new Random();
-                Integer i = random.nextInt(1000);
+                Integer i = random.nextInt(99);
                 counter.addValue(i);
-                Thread.sleep(1);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
