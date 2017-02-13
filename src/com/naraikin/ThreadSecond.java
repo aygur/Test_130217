@@ -15,10 +15,10 @@ public class ThreadSecond extends Thread {
 
     @Override
     public void run() {
-        while (!counter.isFinish){
+        while (!counter.isPredicate()){
             try {
                 Random random = new Random();
-                Integer i = random.nextInt(99);
+                Integer i = random.nextInt(100);
                 counter.addValue(i);
                 Thread.sleep(1000);
             } catch (InterruptedException e) {

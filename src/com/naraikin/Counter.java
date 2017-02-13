@@ -19,7 +19,6 @@ public class Counter {
         } else {
             map.put(key, 1);
         }
-        System.out.println(map);
     }
 
     public synchronized boolean isPredicate(){
@@ -35,6 +34,9 @@ public class Counter {
 
     public Integer getValue(Integer key){
         return map.get(key);
+    }
+    public void printer(){
+        System.out.println(map);
     }
 
 }

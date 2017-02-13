@@ -16,7 +16,8 @@ public class ThreadFiveSecond extends Thread {
         do {
             try {
                 Thread.sleep(5000);
-                if (counter.isPredicate()){
+                counter.printer();
+                if (counter.isFinish){
                     System.out.println("Число " + counter.result
                             + " и более раз: " + counter.getValue(counter.result));
                 }
